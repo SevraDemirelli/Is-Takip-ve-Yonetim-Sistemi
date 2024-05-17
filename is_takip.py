@@ -105,17 +105,17 @@ class Uygulama:
 
         self.proje_sil_buton = tk.Button(self.ana_cerceve, text="Seçili Projeyi Sil", command=self.secili_proje_sil)
         self.proje_sil_buton.grid(row=0, column=2, padx=10, pady=5)
-
+        self.kilavuz_buton = tk.Button(self.ana_cerceve, text="Kullanım Kılavuzu", command=self.goster_kilavuz)
+        self.kilavuz_buton.grid(row=0, column=3, padx=10, pady=5)
         self.proje_cerceve = tk.Frame(self.ana_cerceve)
-        self.proje_cerceve.grid(row=1, column=0, columnspan=3, padx=10, pady=10)
+        self.proje_cerceve.grid(row=1, column=0, columnspan=4, padx=10, pady=10)
 
 
 
 
         self.projeleri_goster()
 
-        self.kilavuz_buton = tk.Button(self.ana_cerceve, text="Kullanım Kılavuzu", command=self.goster_kilavuz)
-        self.kilavuz_buton.grid(row=1, column=1, padx=10, pady=5)
+
     def goster_kilavuz(self):
         kilavuz_metni = """
            KULLANIM KILAVUZU
